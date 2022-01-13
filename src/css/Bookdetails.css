@@ -1,0 +1,71 @@
+.book-outer-container{
+    border: 1px solid #f2e0e0;
+    width: 210px;
+    height: 265px;
+    position: relative;
+    left: 150px;
+    top: 75px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.div-for-image{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10px; */
+    background-color: #f4f3f3;
+}
+.my-image-div{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.div-for-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top:7px;
+    letter-spacing: 0.1px;
+    line-height: 1.25;
+}
+.div-for-rating{
+    height: 23px;
+    display: flex;
+    position: relative;
+    bottom: 35px;
+    align-items: center;
+    background: green;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    width: 42px;
+}
+.div-for-price{
+    display: flex;
+    position: relative;
+    bottom: 45px;
+    font-size: 13px;
+}
+.para-for-book-title{
+margin-top:0px;
+font-size: 14px;
+    font-weight: 500;
+}
+.para-for-book-author{
+    font-size: 13px;
+    position: relative;
+    bottom: 25px;
+}
+.para-for-discouted-price{
+
+}
+.para-fororiginal-price{
+margin-left:10px;
+}
+.star-logo{
+    width: 14px;
+    height: 13px;
+    margin-left: 2px;
+}
+.para-for-rating{
+    padding-left: 4px;
+}

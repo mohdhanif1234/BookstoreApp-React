@@ -3,11 +3,18 @@ import './App.css';
 import Router from './router/Router';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Bookdetails from './components/Bookdetails';
+
 
 function App() {
   return (
     <div>
-      <Router/>
+      <Header/>
+      <Bookdetails/>
+      {/* <Footer/> */}
+      {/* <Router/> */}
       {/* <SignUp/>
       <Login/> */}
     </div>

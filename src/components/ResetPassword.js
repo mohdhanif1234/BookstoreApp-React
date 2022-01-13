@@ -7,36 +7,6 @@ const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0
 
 export default function ResetPassword() {
     let history = useHistory()
-    const[email, setEmail] = React.useState("")
-    const takeEmail = function(event){
-        setEmail(event.target.value)
-      }
-    const Submit = function(){
-        let statusEmail
-        if(!emailRegex.test(email))                
-        {
-          console.log("true")
-          statusEmail = false
-        }
-        else
-        {
-          console.log("false")
-          statusEmail = true
-        }
-        if (statusEmail == true)
-        {
-            let obj = {
-            Email: email                                                   
-        }
-         console.log(obj)
-        //  forgotpassword(obj).then(function(response){
-        //  console.log(response)
-        //  })
-         .catch(function(error){
-         console.log(error)
-         })
-      }
-    }
 
     const gotocreateaccount = function(){
       history.push("/")
@@ -44,8 +14,8 @@ export default function ResetPassword() {
     return (
         <div className="forgotpassword">           
            <div className="header"> 
-           <img src={BookLogo} alt="" class="booklogo"/> 
            <p className="bookstoreheader">BookStore</p>
+           <img src={BookLogo} alt="" class="booklogo"/> 
             </div>
             <div>
             <h3 className = "passwordmessage">Forgot Your Password?</h3>
@@ -57,11 +27,11 @@ export default function ResetPassword() {
             <div className = "formemail1">
                       <label className = "forgotemaillabel" htmlFor = "exampleemail">Email Id</label> <br/>
                       <input variant = "outlined" label = "email" 
-                          placeholder = "" type = "text" className = "forgotemail" onChange = {takeEmail}/>
+                          placeholder = "" type = "text" className = "forgotemail"/>
                     
             </div>
             <div>
-            <button onClick = {Submit} className="button">Reset Password</button>
+            <button className="button">Reset Password</button>
             </div>
             <div class="createacount">
             <div class="createacountbtn">
