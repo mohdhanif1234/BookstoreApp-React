@@ -15,6 +15,7 @@ function Bookdetails() {
                 <div className="div-for-rating">
                 <p className="para-for-rating">4.5</p>
                 <img className="star-logo" src={Star} alt="" />
+                <p className="para-for-bookcount">(20)</p>
                 </div>
                 <div className="div-for-price">
                 <p className="para-for-discouted-price"><strong>Rs.1500</strong></p>
